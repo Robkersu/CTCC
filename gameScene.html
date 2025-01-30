@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Click Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bothStyle.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div id="pauseScreen" class="hidden">
+        <h1>Paused</h1>
+        <p>Press Escape to resume.</p>
+        <p>Press R to reset.</p>
+        <p>Press H to home.</p>
+    </div>
+
+    <div id = "game-container" class="game-container">
+        <div id="fake1" class="fake noshowcursor"></div>
+        <div class="cursor"></div>
+        <div class="trail"></div>
+        <div id="circle" class="circle noshowcursor">
+        </div>
+        <div class="scoreboard">
+            <p class="text">Hp: <span id="hp"></span></p>
+            <p class="text">Score: <span id="score"></span></p>
+            <p class="text">Fooled: <span id="fool"></span></p>
+            <p class="text">Click Accuracy: <span id="clickAccuracy"></span></p>
+            <p class="text">Correct Accuracy: <span id="correctAccuracy"></span></p>
+        </div>
+            <div id="fail" class="fail">
+                <div>You Failed</div><br>
+                <p id="scoreFail" class="text fail"></p>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="cursor.js"></script>
+    <script src="transition.js"></script>
+    <script src="jquery-3.7.1.js"></script>
+</body>
+</html>
